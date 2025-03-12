@@ -238,6 +238,11 @@ const App = () => {
       <footer className="footer mt-5">
         <Container>
           <p className="text-center">© 2025 Health Check Pro | All Rights Reserved</p>
+          <div className="d-flex justify-content-center">
+          <i class="bi bi-twitter-x mx-3"></i>
+          <i class="bi bi-instagram mx-3"></i>
+          <i class="bi bi-threads mx-3"></i>
+        </div>
         </Container>
       </footer>
     </div>
