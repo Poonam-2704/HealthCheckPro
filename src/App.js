@@ -42,19 +42,19 @@ const App = () => {
       <Container className="carousel-container">
         <Carousel className="mb-5">
           <Carousel.Item>
-            <img className="d-block w-100" src="Diet and Nutrition.jpg" alt="Feature 1" />
+            <img className="d-block w-100" src="Diet and Nutrition1.jpg" alt="Feature 1" />
           </Carousel.Item>
           <Carousel.Item>
-            <img className="d-block w-100" src="Personalized healthScore.jpg" alt="Feature 2" />
+            <img className="d-block w-100" src="Personalized healthScore1.jpg" alt="Feature 2" />
           </Carousel.Item>
           <Carousel.Item>
-            <img className="d-block w-100" src="user friendly.jpg" alt="Feature 3" />
+            <img className="d-block w-100" src="user friendly1.jpg" alt="Feature 3" />
           </Carousel.Item>
           <Carousel.Item>
-            <img className="d-block w-100" src="fitness community.jpg" alt="Feature 4" />
+            <img className="d-block w-100" src="fitness community1.jpg" alt="Feature 4" />
           </Carousel.Item>
           <Carousel.Item>
-            <img className="d-block w-100" src="secure.jpg" alt="Feature 5" />
+            <img className="d-block w-100" src="secure1.jpg" alt="Feature 5" />
           </Carousel.Item>
         </Carousel>
       </Container>
