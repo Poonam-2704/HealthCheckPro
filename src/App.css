@@ -23,19 +23,20 @@ body {
 .carousel-container {
   width: 90%;
   margin: auto;
+  height: 50vh; /* Set height to 50% of the viewport */
+  overflow: hidden;
 }
 
 .carousel {
   width: 100%;
-  height: 90%; /* 90% viewport height */
+  height: 100%; /* Ensure it takes up the full container */
   border-radius: 15px;
-  overflow: hidden;
 }
 
 .carousel img {
-  object-fit: cover;
-  height: 90vh;
-  width: 100%;
+  object-fit: cover; /* Ensures images fill the carousel without distortion */
+  height: 100%; /* Fit exactly into the 50vh height */
+  width: 100%; /* Full width */
   border-radius: 15px;
 }
 
