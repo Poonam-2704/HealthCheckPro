@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../Questions.css";
 import { imageMap } from "../utils/imageImports";
+import axios from "axios";
 
 const categories = [
   {
@@ -324,6 +325,18 @@ const Questions = () => {
       setCurrentQuestionIndex(0);
     } else {
       setIsCompleted(true);
+    
+      axios
+        .post("http://localhost:5000/api/save-score", {
+          score: score,
+          totalScore: totalScore,
+        })
+        .then((res) => {
+          console.log("Score saved:", res.data);
+        })
+        .catch((err) => {
+          console.error("Error saving score:", err);
+        });
     }
   };
 
@@ -359,9 +372,14 @@ const Questions = () => {
         <button onClick={() => window.location.href = "/"} className="home-button">
         Go to Home
       </button>
+      <button onClick={() => window.location.href = "/results"} className="health-report-button">
+    Check My Health Report
+</button>
+
       </div>
     );
   }
+  
 
   const currentCategory = categories[currentCategoryIndex];
   const currentQuestion = currentCategory?.questions[currentQuestionIndex];
