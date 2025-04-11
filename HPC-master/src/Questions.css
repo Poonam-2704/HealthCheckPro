@@ -48,46 +48,6 @@ body {
   text-align: center;
   border-radius: var(--border-radius);
 }
-.intro-screen,
-.thank-you-screen {
-  text-align: center;
-  background: #ffffff;
-  padding: 30px 40px;
-  border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-}
-
-.intro-screen video {
-  margin-bottom: 20px;
-  border-radius: 8px;
-}
-
-.intro-screen button {
-  padding: 10px 20px;
-  font-size: 16px;
-  border: none;
-  border-radius: 8px;
-  background-color: #007bff;
-  color: #fff;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.intro-screen button:hover {
-  background-color: #0056b3;
-}
-
-.thank-you-screen h2 {
-  margin-top: 20px;
-  color: #28a745;
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.thank-you-screen img {
-  border-radius: 8px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-}
 
 /* Question Section */
 .question-text-container {
