@@ -1,7 +1,12 @@
+import axios from "axios";
 import React, { useEffect, useState } from "react";
 import "../Questions.css";
 import { imageMap } from "../utils/imageImports";
+<<<<<<< HEAD
 import axios from "axios";
+=======
+import thankYouImg from '../assets/thankyou.webp';
+>>>>>>> 2cb0410 (Updated frontend and backend folders with latest changes)
 
 const categories = [
   {
@@ -278,6 +283,7 @@ const Questions = () => {
   const [isCompleted, setIsCompleted] = useState(false);
   const [progress, setProgress] = useState(0);
   const [showAlert, setShowAlert] = useState(false);
+ 
 
   const totalQuestionsCount = categories.reduce(
     (sum, category) => sum + category.questions.length,
@@ -361,14 +367,11 @@ const Questions = () => {
   if (isCompleted) {
     return (
       <div
-        className="container"
-        style={{ textAlign: "center", justifyContent: "center" }}
-      >
-        <h2>Assessment Completed!</h2>
-        <p>Thank you for your responses.</p>
+      className="completed-container">
+        <br></br><br></br><br></br><br></br><br></br>
         <p>
           Your score: {score} out of {totalScore}
-        </p>
+        </p><br></br><br></br><br></br>
         <button onClick={() => window.location.href = "/"} className="home-button">
         Go to Home
       </button>
@@ -380,6 +383,7 @@ const Questions = () => {
     );
   }
   
+
 
   const currentCategory = categories[currentCategoryIndex];
   const currentQuestion = currentCategory?.questions[currentQuestionIndex];

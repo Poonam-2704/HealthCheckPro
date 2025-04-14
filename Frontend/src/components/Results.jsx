@@ -48,6 +48,10 @@ const Results = () => {
           </tbody>
         </table>
       )}
+<<<<<<< HEAD
+=======
+      <br></br>
+>>>>>>> 2cb0410 (Updated frontend and backend folders with latest changes)
       <button onClick={() => window.location.href = "/"} className="home-button">
         Go to Home
       </button>

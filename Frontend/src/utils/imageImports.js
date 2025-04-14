@@ -25,6 +25,7 @@ import M3 from '../assets/M3.jpg';
 import M4 from '../assets/M4.jpg';
 import M5 from '../assets/M5.jpg';
 
+
 export const imageMap = {
   L1, L2, L3, L4, L5,
   F1, F2, F3, F4, F5,
