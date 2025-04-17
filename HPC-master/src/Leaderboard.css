@@ -1,0 +1,132 @@
+/* Container for the leaderboard */
+.leaderboard-container {
+    padding: 20px;
+    text-align: center;
+    background-color: #f1faff; /* Light blue background */
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+  }
+  
+  /* Table for the leaderboard */
+  .leaderboard-table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 90%;
+    max-width: 750px;
+    font-family: 'Arial', sans-serif;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Table headers */
+  .leaderboard-table th {
+    background-color: #007BFF; /* Blue background for headers */
+    color: white;
+    padding: 15px 20px;
+    font-size: 1.1em;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+    font-weight: 600;
+  }
+  
+  /* Table cells */
+  .leaderboard-table td {
+    border-bottom: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+    font-size: 1.1em;
+    color: #333;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Row styling for top 3 rankings */
+  .leaderboard-table tr:nth-child(1) td {
+    background-color: #FFD700; /* Gold */
+  }
+  
+  .leaderboard-table tr:nth-child(2) td {
+    background-color: #C0C0C0; /* Silver */
+  }
+  
+  .leaderboard-table tr:nth-child(3) td {
+    background-color: #e99d52; /* Bronze */
+  }
+  
+  /* Styling for the first, second, and third place medal text */
+  .leaderboard-table .medal {
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    font-size: 1.1em;
+  }
+  
+  /* Gold, Silver, and Bronze medal colors */
+  .leaderboard-table .gold {
+    color: #FFD700;
+  }
+  
+  .leaderboard-table .silver {
+    color: #C0C0C0;
+  }
+  
+  .leaderboard-table .bronze {
+    color: #cd7f32;
+  }
+  
+  /* Row hover effect */
+  .leaderboard-table tr:hover {
+    background-color: #e7f1ff; /* Light blue hover effect */
+    cursor: pointer;
+  }
+  
+  /* Table borders and layout */
+  .leaderboard-table th, .leaderboard-table td {
+    border: 1px solid #ddd;
+  }
+  
+  /* Odd row styling for better contrast */
+  .leaderboard-table tr:nth-child(odd) {
+    background-color: #fafafa; /* Light gray for odd rows */
+  }
+  
+  /* Adding some spacing between rows */
+  .leaderboard-table tr {
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Medal emoji styling */
+  .medal-emoji {
+    font-size: 1.6em; /* Larger emoji for prominence */
+    margin-left: 8px;
+    vertical-align: middle;
+  }
+  
+  /* Additional hover effect for table cells */
+  .leaderboard-table td:hover {
+    background-color: #e1e8f1; /* Slight blue shade for hover */
+  }
+  
+  /* Button styling */
+  .home-button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #007BFF; /* Blue background for button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .home-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .home-button:focus {
+    outline: none;
+  }
+  
